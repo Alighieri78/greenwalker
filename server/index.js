@@ -13,9 +13,10 @@ app.get('/api/passwords', (req, res) => {
 
   // Generate some passwords
   const passwords = Array.from(Array(count).keys()).map(i =>
-    generatePassword(12, false)
+    //generatePassword(12, false)
+    Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)
   )
-
+  
   // Return them as json
   res.json(passwords);
 
