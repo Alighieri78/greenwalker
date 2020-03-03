@@ -1,31 +1,56 @@
 .App {
-  text-align: center;
-  font-family: "Courier New", monospace;
-  width: 100%;
+  font-family: sans-serif;
 }
 
 h1 {
-  font-weight: normal;
-  font-size: 42px;
+  text-align: center;
 }
 
-.passwords {
-  list-style: none;
-  padding: 0;
-  font-size: 32px;
-  margin-bottom: 2em;
+form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.more {
-  font-size: 32px;
-  font-family: "Courier New", monospace;
-  border: 2px solid #000;
-  background-color: #fff;
-  padding: 10px 25px;
+label,
+input {
+  display: block;
+  width: 100%;
 }
-.more:hover {
-  background-color: #FDD836;
+
+label {
+  margin-bottom: 5px;
+  height: 22px;
 }
-.more:active {
-  background-color: #FFEFA9;
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #777;
+}
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: rgb(235, 54, 54);
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: rgb(144, 194, 138);
+  color: white;
+  border: 1px solid rgb(144, 194, 138);
+  background-color: 250ms;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(144, 194, 138);
 }
