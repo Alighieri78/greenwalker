@@ -48,7 +48,7 @@ export class LoginForm extends React.Component {
     // Post request via API
     axios.post("/api/validatelogin", this.state)
       .then(res => res.json())
-      .then(is_valid => this.setState( {is_valid} ))
+      //.then(is_valid => this.setState( {is_valid} ))
     
     // Do something based on is_valid
     
