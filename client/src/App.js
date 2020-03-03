@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ValidatedLoginForm from "./Profile/ValidatedLoginForm";
 
 class App extends Component {
   // Initialize state
