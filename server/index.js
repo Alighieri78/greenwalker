@@ -23,7 +23,7 @@ app.post('/api/validatelogin', (req, res) => {
     "false"
   );
   
-  // Return them as json
+  // Return as json
   res.json(is_valid);
 
 });
