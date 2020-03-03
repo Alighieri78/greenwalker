@@ -45,14 +45,9 @@ export class LoginForm extends React.Component {
     console.log(this.state);
     
     // Post data to API
-    fetch('/api/validatelogin' , {
-      method: "POST",
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify(this.state)
-    })
-      .then((res) => res.json())
-      .then((info) => { console.log(info); })
+    axios.put("/api/validatelogin", this.state)
+      .then(res => res.json())
+      .catch(err => console.log(err))
+      .then(setTimeout(() => history.replace('/'), 700 ))
   };
 }
