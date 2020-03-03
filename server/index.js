@@ -1,26 +1,30 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const path = require('path');
-const generatePassword = require('password-generator');
 
 const app = express();
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, '/../client/build')));
 
-// Put all API endpoints under '/api'
-app.get('/api/passwords', (req, res) => {
-  const count = 5;
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-  // Generate some passwords
-  const passwords = Array.from(Array(count).keys()).map(i =>
-    //generatePassword(12, false)
-    Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)
-  )
+// Put all API endpoints under '/api'
+app.post('/api/validatelogin', (req, res) => {
+  
+  const email = req.body.email;
+  const password = req.body.password;
+
+  const is_valid = (
+    email == "aw88@students.uwf.edu" && password == "password1" ?
+    "true" :
+    "false"
+  );
   
   // Return them as json
-  res.json(passwords);
+  res.json(is_valid);
 
-  console.log(`Sent ${count} passwords`);
 });
 
 // The "catchall" handler: for any request that doesn't
