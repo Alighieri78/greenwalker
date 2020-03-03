@@ -16,6 +16,7 @@ app.post('/api/validatelogin', (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
+  // Rudimentary validity check
   const is_valid = (
     email == "aw88@students.uwf.edu" && password == "password1" ?
     "true" :
