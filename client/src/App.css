@@ -43,14 +43,14 @@ input.error {
 
 button {
   padding: 10px 15px;
-  background-color: rgb(144, 194, 138);
+  background-color: rgb(144, 194, 38);
   color: white;
-  border: 1px solid rgb(144, 194, 138);
+  border: 1px solid rgb(144, 194, 38);
   background-color: 250ms;
 }
 
 button:hover {
   cursor: pointer;
   background-color: white;
-  color: rgb(144, 194, 138);
+  color: rgb(144, 194, 38);
 }
