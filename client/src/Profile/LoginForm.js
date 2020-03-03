@@ -5,8 +5,7 @@ export class LoginForm extends React.Component {
     super(props);
     this.state = {
       email: "",
-      password: "",
-      is_valid: ""
+      password: ""
     };
   }
 
@@ -48,9 +47,10 @@ export class LoginForm extends React.Component {
     // Post request via API
     axios.post("/api/validatelogin", this.state)
       .then(res => res.json())
-      //.then(is_valid => this.setState( {is_valid} ))
+      // Store result in variable
     
-    // Do something based on is_valid
+    // Do something based on result
+    // May need to use
     
   };
 }
