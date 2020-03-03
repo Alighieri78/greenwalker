@@ -44,7 +44,7 @@ export class LoginForm extends React.Component {
     console.log("Submitting");
     console.log(this.state);
     
-    // Post data to API
+    // PUT request via API
     axios.put("/api/validatelogin", this.state)
       .then(res => res.json())
       .catch(err => console.log(err))
