@@ -48,6 +48,5 @@ export class LoginForm extends React.Component {
     axios.put("/api/validatelogin", this.state)
       .then(res => res.json())
       .catch(err => console.log(err))
-      .then(setTimeout(() => history.replace('/'), 700 ))
   };
 }
