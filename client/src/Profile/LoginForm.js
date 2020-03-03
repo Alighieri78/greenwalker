@@ -43,5 +43,16 @@ export class LoginForm extends React.Component {
   handleSubmit = event => {
     console.log("Submitting");
     console.log(this.state);
+    
+    // Post data to API
+    fetch('/api/validatelogin' , {
+      method: "POST",
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(this.state)
+    })
+      .then((res) => res.json())
+      .then((info) => { console.log(info); })
   };
 }
