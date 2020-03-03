@@ -26,7 +26,7 @@ const ValidatedLoginForm = () => (
     //   } else if (values.password.length < 8) {
     //     errors.password = "Password must be 8 characters long.";
     //   } else if (!passwordRegex.test(values.password)) {
-    //     errors.password = "Invalida password. Must contain one number";
+    //     errors.password = "Invalid password. Must contain one number";
     //   }
 
     //   return errors;
