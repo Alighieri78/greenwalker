@@ -24,7 +24,7 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div id="root"></div> <!-- TODO this should be removed -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -33,11 +33,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- <h1>GreenWalker</h1>
-    <nav>
-    	<a>Sign in</a>
-	<a>Map</a>
-    </nav>
-    <main>Welcome to GreenWalker.</main> -->
+    <div id="bodywrapper">
+      <div id="header">
+        <div class="navigation" id="logo"> <!-- TODO left aligned (css) -->
+          <a href="/" title="greenwalker">
+            greenwalker <!-- TODO: should be an image -->
+          </a>
+        </div>
+        <!-- TODO add search -->
+        <ul class="navigation" id="mainnav"> <!-- TODO left aligned (css) -->
+          <li class="navigation" id="discover">
+            <a href="/discover">
+              Discover
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation" id="usernav"> <!-- TODO right aligned (css) -->
+          <li class="navigation signedout">
+            <!-- TODO need to set these links up with React in mind -->
+            <a class="signin_link" href="/login">Log In</a>
+            "
+            or
+            "
+            <a class="signup_link" href="/signup">Sign Up</a>
+          </li>
+          <!-- TODO add profile information -->
+        </ul>
+      </div>
+      <div id="wrapper">
+        <div id="main-container">
+          Welcome! <!-- TODO proper home page? -->
+          <!-- TODO some kind of digest? -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
