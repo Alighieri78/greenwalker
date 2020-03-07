@@ -50,6 +50,8 @@ app.post('/api/getPosts', (req, res) => {
 app.post('/api/addComment', (req, res) => {
   //adds a comment to a post
   //associate comment with corresponding post, somehow
+  // the somehow is to use foreign key relationship between comment and post
+  // comment will have postid as a foreign key
   //add post to database
 });
 
