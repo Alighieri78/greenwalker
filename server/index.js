@@ -49,7 +49,8 @@ app.post('/api/getPosts', (req, res) => {
 
 app.post('/api/addComment', (req, res) => {
   //adds a comment to a post
-  //
+  //associate comment with corresponding post, somehow
+  //add post to database
 });
 
 // The "catchall" handler: for any request that doesn't
