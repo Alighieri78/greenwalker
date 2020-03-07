@@ -18,7 +18,7 @@ app.post('/api/validatelogin', (req, res) => {
 
   // Rudimentary validity check
   const is_valid = (
-    email == "aw88@students.uwf.edu" && password == "password1" ?
+    email === "aw88@students.uwf.edu" && password === "password1" ?
     "true" :
     "false"
   );
@@ -26,6 +26,22 @@ app.post('/api/validatelogin', (req, res) => {
   // Return as json
   res.json(is_valid);
 
+});
+
+app.post('/api/validatesignup', (req, res) => {
+  //checks to see if inputted login info is valid for signup
+});
+
+app.post('/api/addPost', (req, res) => {
+  //adds post to the database
+});
+
+app.post('/api/getPosts', (req, res) => {
+  //retrieve posts from the database
+});
+
+app.post('/api/addComment', (req, res) => {
+  //adds a comment to a post
 });
 
 // The "catchall" handler: for any request that doesn't
