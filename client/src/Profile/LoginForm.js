@@ -46,11 +46,18 @@ export class LoginForm extends React.Component {
     
     // Post request via API
     axios.post("/api/validatelogin", this.state)
-      .then(res => res.json())
+      .then(res => res.json());
       // Store result in variable
     
-    // Do something based on result
-    // May need to use
+    return (
+       // if there is an issue  &&
+      <div className="input-feedback">{//error variable
+            }</div>
+
+        // if there's not an issue &&
+        // log in and do whatever happens next
+    )
+
     
   };
 }
