@@ -30,18 +30,26 @@ app.post('/api/validatelogin', (req, res) => {
 
 app.post('/api/validatesignup', (req, res) => {
   //checks to see if inputted login info is valid for signup
+  //check if info meets requirements
+  //if so, add to database and return success
+  //else, return error msg
 });
 
 app.post('/api/addPost', (req, res) => {
   //adds post to the database
+  //check if all required data for posting is present
+  //if so, add post to database and return success
+  //else, return failure
 });
 
 app.post('/api/getPosts', (req, res) => {
   //retrieve posts from the database
+  //return posts
 });
 
 app.post('/api/addComment', (req, res) => {
   //adds a comment to a post
+  //
 });
 
 // The "catchall" handler: for any request that doesn't
