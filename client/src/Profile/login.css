@@ -19,28 +19,30 @@ body {
     background-size: 100px 100px;
 }
 
-form {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
+
+form{
+	max-width: 500px;
+	width: 400%;
+	margin: 0 auto;
+	background-color: white;
+	
 }
 
-label,
-input {
-    display: block;
-    width: 100%;
+label, input{
+	display: block;
+	width: 50%;
 }
 
-label {
-    margin-bottom: 5px;
-    height: 22px;
+label{
+	margin-bottom:5px;
+	height: 22px;
 }
 
-input {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #777;
+input{
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 2px;
+	border: 0.5px solid #777;
 }
 
 input.error {
