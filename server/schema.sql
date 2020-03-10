@@ -1,3 +1,5 @@
+/* Creates user table, username collumn will not store duplicates, 
+has email verify script, provides date and last login. */
 CREATE TABLE users (
   uid SERIAL PRIMARY KEY,
   username VARCHAR(255) UNIQUE,
