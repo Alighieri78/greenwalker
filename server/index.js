@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Put all API endpoints under '/api'
-app.post('/api/validatelogin', (req, res) => {
+app.get('/api/validatelogin', (req, res) => {
   
   const email = req.body.email;
   const password = req.body.password;
@@ -42,7 +42,7 @@ app.post('/api/addPost', (req, res) => {
   //else, return failure
 });
 
-app.post('/api/getPosts', (req, res) => {
+app.get('/api/getPosts', (req, res) => {
   //retrieve posts from the database
   //return posts
 });
