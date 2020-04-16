@@ -33,6 +33,20 @@ app.post('/api/validatesignup', (req, res) => {
   //check if info meets requirements
   //if so, add to database and return success
   //else, return error msg
+  const email = req.body.email;
+  const password = req.body.password'
+  if((email == NULL) && (password == NULL)){
+    return res.send("Error: Email and password is empty.");
+  }
+  else if(email == NULL){
+   return res.send("Error: Email is empty."); 
+  }
+  else if(password == NULL){
+    return res.send("Error: Password is empty.");
+  }
+  else{
+    
+  }
 });
 
 app.post('/api/addPost', (req, res) => {
